@@ -1,0 +1,14 @@
+streamlit==1.45.1
+transformers==4.41.2
+torch==2.3.0
+tensorflow==2.16.1
+requests==2.32.3
+folium==0.19.6
+streamlit-folium==0.25.0
+geopy==2.4.1
+pandas==2.2.3
+tf-keras
+streamlit
+pandas
+scikit-learn
+geopy

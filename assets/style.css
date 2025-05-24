@@ -1,0 +1,108 @@
+/* General styling for containers/boxes */
+.stContainer, .stForm, .stTable {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Styles for place cards in details view and nearby attractions */
+.details-box, .sentiment-box, .nearby-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.details-box h3, .sentiment-box h3, .nearby-card h5 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Styles for the new list row items */
+.list-item-row {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items in the row */
+}
+
+.list-item-row h5 {
+    margin: 0; /* Remove default margin for h5 in list items */
+    flex-grow: 1; /* Allow name to take available space */
+    text-align: left;
+}
+
+.list-item-row p {
+    margin: 0; /* Remove default margin for p in list items */
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Ensure buttons are centered within their own space */
+.stButton > button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Make button take up more space in its column */
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+}
+
+/* Specific button styling for "Back" button */
+.stButton button[key*="back"] {
+    background-color: #6c757d; /* Grey for back button */
+}
+
+.stButton button[key*="back"]:hover {
+    background-color: #5a6268;
+}
+
+/* Input bar styling */
+.stTextInput>div>div>input {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Selectbox styling */
+.stSelectbox>div>div>div {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3em; /* Adjust as needed */
+    color: #007bff; /* A nice blue color */
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+}
+
+/* For aligned text in budget results */
+.aligned-label {
+    font-weight: bold;
+    min-width: 150px; /* Adjust as needed */
+    display: inline-block;
+}
